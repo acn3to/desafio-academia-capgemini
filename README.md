@@ -104,4 +104,4 @@ mvn test
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/acn3to/desafio-academia-capgemini/blob/main/LICENSE) para detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/acn3to/desafio-academia-capgemini/blob/main/LICENSE.md) para detalhes.
