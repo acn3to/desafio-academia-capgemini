@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 class EscadaTest {
 	
     @Test
-    @DisplayName("Retorna uma escada com 1 de base e altura quando o input for 1")
-    void testeToStringQuandoEscadaTem1DegrauEntaoRetornaStringEsperada(){
+    @DisplayName("Retornar uma escada com 1 de base e altura quando o input for 1")
+    void testeToStringQuandoEscadaTiver1DegrauEntaoRetorneStringEsperada(){
     	Integer degraus = 1;
     	Escada escada = new Escada(degraus);
     	
@@ -20,8 +20,8 @@ class EscadaTest {
     }
     
     @Test
-    @DisplayName("Retorna uma escada com 5 de base e altura quando o input for 5")
-    void testeToStringQuandoEscadaTem5DegrausEntaoRetornaStringEsperada(){
+    @DisplayName("Retornar uma escada com 5 de base e altura quando o input for 5")
+    void testeToStringQuandoEscadaTiver5DegrausEntaoRetorneStringEsperada(){
     	Integer degraus = 5;
     	Escada escada = new Escada(degraus);
     	

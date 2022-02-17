@@ -7,19 +7,19 @@ import org.junit.jupiter.api.Test;
 
 class SenhaTest {
 
-	@Test
+	//@Test
 	void testSenha() {
 		fail("Not yet implemented");
 	}
 
-	@Test
+	//@Test
 	void testGetValor() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	@DisplayName("Retorna o valor 4 quando a senha possuir 4 caracteres")
-	void testeGetComprimentoQuandoForDigitadoUmaSenhaCom4CaracteresEntaoRetorne4() {
+	@DisplayName("Retornar o valor 4 quando a senha possuir 4 caracteres")
+	void testeGetComprimentoQuandoForDigitadaUmaSenhaCom4CaracteresEntaoRetorne4() {
 		String senhaDigitada = "yA+2";
 		Senha senha = new Senha(senhaDigitada);
 
@@ -30,8 +30,8 @@ class SenhaTest {
 	}
 
 	@Test
-	@DisplayName("Retorna o valor 6 quando a senha possuir 6 caracteres")
-	void testeGetComprimentoQuandoForDigitadoUmaSenhaCom6CaracteresEntaoRetorne6() {
+	@DisplayName("Retornar o valor 6 quando a senha possuir 6 caracteres")
+	void testeGetComprimentoQuandoForDigitadaUmaSenhaCom6CaracteresEntaoRetorne6() {
 		String senhaDigitada = "aaaaaa";
 		Senha senha = new Senha(senhaDigitada);
 
@@ -42,7 +42,7 @@ class SenhaTest {
 	}
 
 	@Test
-	@DisplayName("Retorna o valor boleano true quando a senha possuir digitos")
+	@DisplayName("Retornar o valor boleano true quando a senha possuir digitos")
 	void testeTemDigitosQuandoHouverAlgumDigitoEntaoRetorneTrue() {
 		String senhaDigitada = "4aas";
 		Senha senha = new Senha(senhaDigitada);
@@ -54,8 +54,8 @@ class SenhaTest {
 	}
 
 	@Test
-	@DisplayName("Retorna o valor boleano false quando a senha não possui digitos")
-	void testeTemDigitosQuandoQuandoNaoHouverAlgumDigitoEntaoRetorneFalse() {
+	@DisplayName("Retornar o valor boleano false quando a senha não possuir digitos")
+	void testeTemDigitosQuandoNaoHouverAlgumDigitoEntaoRetorneFalse() {
 		String senhaDigitada = "dssaas";
 		Senha senha = new Senha(senhaDigitada);
 
@@ -66,7 +66,7 @@ class SenhaTest {
 	}
 
 	@Test
-	@DisplayName("Retorna o valor boleano true quando a senha possui caracteres minúsculos")
+	@DisplayName("Retornar o valor boleano true quando a senha possuir caracteres minúsculos")
 	void testeTemMinusculoQuandoHouverAlgumCaractereMinusculoEntaoRetorneTrue() {
 		String senhaDigitada = "dssaas";
 		Senha senha = new Senha(senhaDigitada);
@@ -78,8 +78,8 @@ class SenhaTest {
 	}
 
 	@Test
-	@DisplayName("Retorna o valor boleano false quando a senha não possuir caracteres minúsculos")
-	void testeTemMinusculoQuandoNaoHouverAlgumCaractereMinusculoEntaoRetorneFalse() {
+	@DisplayName("Retornar o valor boleano false quando a senha não possuir caracteres minúsculos")
+	void testeTemMinusculoQuandNaoHouverAlgumCaractereMinusculoEntaoRetorneFalse() {
 		String senhaDigitada = "333A+A";
 		Senha senha = new Senha(senhaDigitada);
 
@@ -90,13 +90,51 @@ class SenhaTest {
 	}
 
 	@Test
-	void testTemMaiusculo() {
-		fail("Not yet implemented");
+	@DisplayName("Retornar o valor boleano true quando a senha possuir caracteres maiúsculos")
+	void testeTemMaiusculoQuandoHouverAlgumCaractereMaiusculoEntaoRetorneTrue() {
+		String senhaDigitada = "WWa23s";
+		Senha senha = new Senha(senhaDigitada);
+
+		Boolean resultado = senha.temMaiusculo();
+
+		Boolean esperado = true;
+		assertEquals(esperado, resultado);
 	}
 
 	@Test
-	void testTemEspeciais() {
-		fail("Not yet implemented");
+	@DisplayName("Retornar o valor boleano false quando a senha não possuir caracteres maiúsculos")
+	void testeTemMaiusculoQuandNaoHouverAlgumCaractereMaiusculoEntaoRetorneFalse() {
+		String senhaDigitada = "aassqw2+";
+		Senha senha = new Senha(senhaDigitada);
+
+		Boolean resultado = senha.temMaiusculo();
+
+		Boolean esperado = false;
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	@DisplayName("Retornar o valor boleano true quando a senha possuir caracteres especiais")
+	void testeTemMaiusculoQuandoHouverAumCaractereMaiusculoEntaoRetorneTrue() {
+		String senhaDigitada = "aasw+eE";
+		Senha senha = new Senha(senhaDigitada);
+
+		Boolean resultado = senha.temEspeciais();
+
+		Boolean esperado = true;
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	@DisplayName("Retornar o valor boleano false quando a senha não possuir caracteres especiais")
+	void testeTemMaiusculoQuandoNaoHouverAlgumCaractereMaiusculoEntaoRetorneFalse() {
+		String senhaDigitada = "dsdsK3";
+		Senha senha = new Senha(senhaDigitada);
+
+		Boolean resultado = senha.temEspeciais();
+
+		Boolean esperado = false;
+		assertEquals(esperado, resultado);
 	}
 
 }
