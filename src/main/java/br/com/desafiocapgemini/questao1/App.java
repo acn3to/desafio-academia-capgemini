@@ -15,7 +15,7 @@ public class App {
 			Escada escada = new Escada(degraus);
 			System.out.print(escada.toString());
 		} catch (NumberFormatException a) {
-			System.out.print("Input inválido");
+			System.out.print("Input invalido");
 		}
 
 		sc.close();

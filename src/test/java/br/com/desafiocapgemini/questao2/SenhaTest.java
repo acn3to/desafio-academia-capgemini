@@ -7,16 +7,6 @@ import org.junit.jupiter.api.Test;
 
 class SenhaTest {
 
-	//@Test
-	void testSenha() {
-		fail("Not yet implemented");
-	}
-
-	//@Test
-	void testGetValor() {
-		fail("Not yet implemented");
-	}
-
 	@Test
 	@DisplayName("Retornar o valor 4 quando a senha possuir 4 caracteres")
 	void testeGetComprimentoQuandoForDigitadaUmaSenhaCom4CaracteresEntaoRetorne4() {
@@ -115,7 +105,7 @@ class SenhaTest {
 
 	@Test
 	@DisplayName("Retornar o valor boleano true quando a senha possuir caracteres especiais")
-	void testeTemMaiusculoQuandoHouverAumCaractereMaiusculoEntaoRetorneTrue() {
+	void testeTemEspecialQuandoHouverAlgumCaractereEspecialEntaoRetorneTrue() {
 		String senhaDigitada = "aasw+eE";
 		Senha senha = new Senha(senhaDigitada);
 
@@ -127,7 +117,7 @@ class SenhaTest {
 
 	@Test
 	@DisplayName("Retornar o valor boleano false quando a senha não possuir caracteres especiais")
-	void testeTemMaiusculoQuandoNaoHouverAlgumCaractereMaiusculoEntaoRetorneFalse() {
+	void testeTemEspecialQuandoNaoHouverAlgumCaractereEspecialEntaoRetorneFalse() {
 		String senhaDigitada = "dsdsK3";
 		Senha senha = new Senha(senhaDigitada);
 
