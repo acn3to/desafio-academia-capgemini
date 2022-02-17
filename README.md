@@ -79,7 +79,7 @@ java App
 
 ### ⚙️ Executando os testes
 
-Para executar os testes unitários, abra o terminal no diretório principal do projeto:
+Para executar os testes unitários abra o terminal no diretório principal do projeto:
 
 ```
 \desafio-capgemini
