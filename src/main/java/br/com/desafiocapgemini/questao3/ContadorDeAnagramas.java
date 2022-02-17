@@ -15,8 +15,8 @@ public class ContadorDeAnagramas {
 	public Integer contar(String palavra) {
 		ArrayList<String> substrings = separador.listarSubstrings(palavra);
 		Integer resultado = 0;
-		for (int i = 0; i < substrings.size() -1; i++) {
-			for (int j = i + 1; j <= substrings.size() -1; j++) {
+		for (int i = 0; i < substrings.size() - 1; i++) {
+			for (int j = i + 1; j <= substrings.size() - 1; j++) {
 				Boolean saoAnagramas = comparador.saoAnagramas(substrings.get(i), substrings.get(j));
 				if (saoAnagramas) {
 					resultado++;

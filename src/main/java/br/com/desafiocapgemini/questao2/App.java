@@ -10,7 +10,7 @@ public class App {
 		Integer resultado = verificador.getCaracteresFaltando(senha);
 		System.out.print(resultado);
 	}
-	
+
 	private static Senha perguntarSenha() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Digite sua senha: ");
