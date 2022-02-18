@@ -33,9 +33,11 @@ Ou se preferir, faça o download diretamente do seu navegador:
 
 ### 📋 Pré-requisitos
 
-[JDK 17](https://www.oracle.com/java/technologies/downloads/)
+[JDK 17](https://www.oracle.com/java/technologies/downloads/) - 
+Pacote de software para desenvolver aplicativos baseados em Java, 
+nele contem o Java Runtime Environment, plug-in necessário para a execução de programas Java.
 
-[MVN](https://maven.apache.org/download.cgi)
+[Maven](https://maven.apache.org/download.cgi) - Ferramenta de automação de compilação utilizada primariamente em projetos Java.
 
 
 ### 🔧 Execução
@@ -79,7 +81,7 @@ java App
 
 ### ⚙️ Executando os testes
 
-Para executar os testes unitários abra o terminal no diretório principal do projeto:
+Para executar os testes unitários, abra o terminal no diretório principal do projeto:
 
 ```
 \desafio-capgemini
@@ -104,4 +106,4 @@ mvn test
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/acn3to/desafio-academia-capgemini/blob/main/LICENSE.md) para detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/acn3to/desafio-academia-capgemini/blob/main/LICENSE) para detalhes.
